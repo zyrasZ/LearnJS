@@ -1,0 +1,13 @@
+const text1 = "Xin chào Việt Nam !!! Tôi đến từ Gia Lai . ";
+let part = text1.slice(9,17);
+let part1 = part.toUpperCase();
+console.log(part1);
+const ten_truong = "Đại học Giao thông Vận tải.";
+let text2 = "Tôi học ở trường ${ten_truong}.";
+let text3 = text1.concat (text2);
+console.log(text3);
+let doan = "BANHMI_BANHBAO_HUTIEU_BANHCANH";
+let list = doan.split("_");
+let list1 = list.join("/");
+console.log(list1);
+console.log(list1.include("BANHMI"));
