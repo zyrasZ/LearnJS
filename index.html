@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-    <h1>Hello moi nguoi</h1>
-    <script src="index.js"></script>
+    <div id="player-info">
+      <span id="player-name">Người chơi: <b>Player1</b></span><br>
+      <span id="player-score">Điểm: <b>0</b></span>
+    </div>
+    <div id="game-area">
+      <div id="random-circle">?</div>
+      <input id="user-number" type="number" min="0" max="1000" placeholder="Nhập số của bạn" />
+      <button id="check-btn">Xem kết quả</button>
+      <div class="even-odd-group">
+        <label><input type="radio" name="even-odd" value="even"> Chẵn</label>
+        <label style="margin-left:20px;"><input type="radio" name="even-odd" value="odd"> Lẻ</label>
+      </div>
+      <button id="even-odd-btn">Kiểm tra chẵn/lẻ</button>
+      <div id="game-message"></div>
+    </div>
+    <div class="analog-clock" id="analog-clock">
+      <div class="hand hour" id="hour-hand"></div>
+      <div class="hand minute" id="minute-hand"></div>
+      <div class="hand second" id="second-hand"></div>
+      <div class="center-dot"></div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
